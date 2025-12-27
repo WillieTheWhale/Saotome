@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="早乙女塾へのお問い合わせ">
+  <title>お問い合わせ | 早乙女塾</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- CRITICAL: Synchronous language detection BEFORE any rendering -->
+  <script>
+    (function(){
+      if(localStorage.getItem('sga-lang-v6')==='en'){
+        document.documentElement.classList.add('en');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link"><span class="ja">本文へスキップ</span><span class="en" style="display:none">Skip to content</span></a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="logo"><img src="../images/mini_logo.png" alt="早乙女塾"></a>
+      <nav class="main-nav">
+        <a href="./about.html" class="nav-item"><span class="nav-en">About</span><span class="nav-ja ja">私たちについて</span><span class="nav-ja en" style="display:none">About Us</span></a>
+        <a href="./services.html" class="nav-item"><span class="nav-en">Services</span><span class="nav-ja ja">サービス</span><span class="nav-ja en" style="display:none">Services</span></a>
+        <a href="./team.html" class="nav-item"><span class="nav-en">Tutors</span><span class="nav-ja ja">講師紹介</span><span class="nav-ja en" style="display:none">Our Tutors</span></a>
+        <a href="./testimonials.html" class="nav-item"><span class="nav-en">Voice</span><span class="nav-ja ja">生徒の声</span><span class="nav-ja en" style="display:none">Testimonials</span></a>
+        <a href="./blog.html" class="nav-item"><span class="nav-en">Blog</span><span class="nav-ja ja">ブログ</span><span class="nav-ja en" style="display:none">Blog</span></a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch"><button data-lang="ja" class="active">日本語</button><button data-lang="en">EN</button></div>
+        <button class="menu-btn" aria-label="メニュー"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <a href="./about.html" class="mobile-nav-item"><span class="nav-en">About</span><span class="nav-ja ja">私たちについて</span><span class="nav-ja en" style="display:none">About Us</span></a>
+      <a href="./services.html" class="mobile-nav-item"><span class="nav-en">Services</span><span class="nav-ja ja">サービス</span><span class="nav-ja en" style="display:none">Services</span></a>
+      <a href="./team.html" class="mobile-nav-item"><span class="nav-en">Tutors</span><span class="nav-ja ja">講師紹介</span><span class="nav-ja en" style="display:none">Our Tutors</span></a>
+      <a href="./testimonials.html" class="mobile-nav-item"><span class="nav-en">Voice</span><span class="nav-ja ja">生徒の声</span><span class="nav-ja en" style="display:none">Testimonials</span></a>
+      <a href="./blog.html" class="mobile-nav-item"><span class="nav-en">Blog</span><span class="nav-ja ja">ブログ</span><span class="nav-ja en" style="display:none">Blog</span></a>
+    </nav>
+  </header>
+  <div class="header-spacer"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="section-en">Contact</span>
+        <h1><span class="ja">お問い合わせ</span><span class="en" style="display:none">Contact Us</span></h1>
+        <p><span class="ja">無料相談・ご質問はこちらから</span><span class="en" style="display:none">Free consultation and inquiries</span></p>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="container" style="max-width:600px;">
+        <div class="card fade-in">
+          <form class="contact-form">
+            <div class="form-group">
+              <label class="form-label"><span class="ja">お名前</span><span class="en" style="display:none">Name</span> *</label>
+              <input type="text" name="name" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label"><span class="ja">メールアドレス</span><span class="en" style="display:none">Email</span> *</label>
+              <input type="email" name="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label"><span class="ja">件名</span><span class="en" style="display:none">Subject</span></label>
+              <input type="text" name="subject" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label"><span class="ja">メッセージ</span><span class="en" style="display:none">Message</span> *</label>
+              <textarea name="message" class="form-textarea" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <span class="ja">送信する</span>
+              <span class="en" style="display:none">Send Message</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="text-center mt-8 fade-in">
+          <p style="color:var(--ink-light);margin-bottom:var(--sp-4);">
+            <span class="ja">または直接メールでお問い合わせください</span>
+            <span class="en" style="display:none">Or contact us directly via email</span>
+          </p>
+          <a href="mailto:ryohsaotome@gmail.com" class="btn btn-secondary">ryohsaotome@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="../images/mini_logo.png" alt="早乙女塾"><p><span class="ja">アメリカ在住の日本人家庭のための、オンライン英語個別指導塾。</span><span class="en" style="display:none">Online English tutoring for Japanese families in America.</span></p></div>
+        <div class="footer-col"><h4><span class="ja">メニュー</span><span class="en" style="display:none">Menu</span></h4><ul class="footer-links"><li><a href="./about.html"><span class="ja">私たちについて</span><span class="en" style="display:none">About Us</span></a></li><li><a href="./services.html"><span class="ja">サービス</span><span class="en" style="display:none">Services</span></a></li><li><a href="./team.html"><span class="ja">講師紹介</span><span class="en" style="display:none">Tutors</span></a></li></ul></div>
+        <div class="footer-col"><h4><span class="ja">情報</span><span class="en" style="display:none">Info</span></h4><ul class="footer-links"><li><a href="./testimonials.html"><span class="ja">生徒の声</span><span class="en" style="display:none">Testimonials</span></a></li><li><a href="./blog.html"><span class="ja">ブログ</span><span class="en" style="display:none">Blog</span></a></li><li><a href="./contact.html"><span class="ja">お問い合わせ</span><span class="en" style="display:none">Contact</span></a></li></ul></div>
+        <div class="footer-col"><h4><span class="ja">お問い合わせ</span><span class="en" style="display:none">Contact</span></h4><ul class="footer-links"><li><a href="mailto:ryohsaotome@gmail.com">ryohsaotome@gmail.com</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">© 2025 Saotome Global Academy 早乙女塾</p></div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
